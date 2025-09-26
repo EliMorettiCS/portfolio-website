@@ -1,0 +1,21 @@
+body {
+    background-color: #ffffff;
+    color:rgb(65, 63, 121);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar{
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    margin: 15px 15px;
+    flex-direction: row;
+    justify-content: space-around;
+    border-style:double;
+    border-width:5px;
+}
+
+.navbar a{
+    margin: 15px 15px;
+    color:rgb(65, 63, 121);
+    text-decoration: none;
+}
