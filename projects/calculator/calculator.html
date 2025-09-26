@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script src="calculator.js"></script>
+</head>
+<link rel="stylesheet" href="../../css/main.css">
+<link rel="stylesheet" href="../../css/calculator.css">
+<body>
+    <div class="navbar">
+       <a href="../../home.html">Home</a>
+       <a id="selected" href="../../projects.html">Projects</a>
+       <a href="../../contact.html">Contact</a>
+    </div>
+    <br>
+    <br>
+    <br> 
+    <h1>Calculator</h1>
+    <p>Feast your eyes on my javascript calculator! The javascript is all written by me and will follow the
+        rules of pemdas.
+    </p>
+    <hr>
+    <div id="calc">
+        <div id="calc_results" style="order:1;">
+            <button id="results"onclick="copyAnswer()"></button>
+        </div>
+        <div class="calc_numbers_row" style="order:4;">
+            <button onclick="add('1')">1</button>
+            <button onclick="add('2')">2</button>
+            <button onclick="add('3')"> 3</button>
+        </div>
+        <div class="calc_numbers_row" style="order:3;">
+            <button onclick="add('4')">4</button>
+            <button onclick="add('5')">5</button>
+            <button onclick="add('6')">6</button>
+        </div>
+        <div class="calc_numbers_row" style="order:2;">
+            <button onclick="add('7')">7</button>
+            <button onclick="add('8')">8</button>
+            <button onclick="add('9')">9</button>
+        </div>
+        <div id="calc_zero" style="order:5;">
+            <button onclick="add('0')">0</button>
+        </div>
+        <div id="calc_equations" style="order:6;">
+            <button onclick="printAnswer()">=</button>
+            <button onclick="add('+')">+</button>
+            <button onclick="add('−')">−</button>
+            <button onclick="add('÷')">÷</button>
+            <button onclick="add('×')">×</button>
+            <button onclick="clearCalc()" id="clear_button">C</button>
+        </div>
+    </div>
+    <hr>
+    <p><small>
+        all of my website is coded purely by me with zero ai use. the only help ive recieved is either
+        by friends and mentors or documentation. I will never use ai on any of my work unless its explicitly required/reccomended by the employer or to problem solve. No copy and pasted code.
+    </p></small>
+</body>
+</html>

@@ -1,0 +1,190 @@
+
+/*Animations*/
+@keyframes calc_button_hover {
+    0% {
+        transform:translate(0px,0px);
+        box-shadow: 1px 1px rgb(95, 92, 174),
+        2px 2px rgb(95, 92, 174),
+        3px 3px rgb(95, 92, 174),
+        4px 4px rgb(95, 92, 174);
+        
+    }
+    100% {
+        transform:translate(-4px,-4px);
+        box-shadow: 1px 1px rgb(95, 92, 174),
+        2px 2px rgb(95, 92, 174),
+        3px 3px rgb(95, 92, 174),
+        4px 4px rgb(95, 92, 174),
+        5px 5px rgb(95, 92, 174),
+        6px 6px rgb(95, 92, 174),
+        7px 7px rgb(95, 92, 174),
+        8px 8px rgb(95, 92, 174);
+    }
+}
+@keyframes calc_button_hover_reverse {
+    100% {
+        transform:translate(0px,0px);
+        box-shadow: 1px 1px rgb(95, 92, 174),
+        2px 2px rgb(95, 92, 174),
+        3px 3px rgb(95, 92, 174),
+        4px 4px rgb(95, 92, 174);
+        
+    }
+    0% {
+        transform:translate(-4px,-4px);
+        box-shadow: 1px 1px rgb(95, 92, 174),
+        2px 2px rgb(95, 92, 174),
+        3px 3px rgb(95, 92, 174),
+        4px 4px rgb(95, 92, 174),
+        5px 5px rgb(95, 92, 174),
+        6px 6px rgb(95, 92, 174),
+        7px 7px rgb(95, 92, 174),
+        8px 8px rgb(95, 92, 174);
+    }
+}
+
+@keyframes calc_intro {
+    0%{
+        transform:translateX(500px) rotate(5deg);
+
+    }
+    50%{
+        transform:translate(-5px) rotate(-.5deg);
+
+        
+    }
+    100%{
+        transform:translate(0px) rotate(0deg);
+
+        
+        
+    }
+
+}
+
+/*Main Calculator Flex*/
+#calc {
+    /*Flexbox*/
+    display:flex;
+    flex-flow: column wrap;
+    /*Formatting*/
+    overflow: hidden;
+    max-width: 400px;
+    margin-left:auto;
+    margin-right: auto;
+    /*Styling*/
+    box-shadow: 1px 1px rgb(95, 92, 174),
+    2px 2px rgb(95, 92, 174),
+    3px 3px rgb(95, 92, 174),
+    4px 4px rgb(95, 92, 174),
+    5px 5px rgb(95, 92, 174);
+    border-color: rgb(95, 92, 174);
+    background-color: #ffffff;
+    border-style:double;
+    border-width:10px;
+    border-radius:5px;
+    /*Animation*/
+    animation-name:calc_intro;
+    animation-play-state: running;
+    animation-duration: .5s;
+}
+
+#calc div{
+    /*Flexbox*/
+    display:flex;
+    /*Formatting*/
+    height: calc(55px);
+    padding:5px;
+    margin:5px;
+    /*Styling*/
+    border-radius: 5px;
+}
+
+#calc button{
+    /*Flexbox*/
+    flex:4;
+    /*Formatting*/
+    margin-top: -4px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /*Styling*/
+    color:rgb(31, 27, 116);
+    background-color: #ffffff;
+    box-shadow: 1px 1px rgb(95, 92, 174),
+    2px 2px rgb(95, 92, 174),
+    3px 3px rgb(95, 92, 174),
+    4px 4px rgb(95, 92, 174);
+    border-color: rgb(95, 92, 174);
+    border-style:double;
+    border-width:10px;
+    border-radius:5px;
+    font-family:Leorio;
+    font-weight: bold;
+    font-size:25px;
+    /*Animation*/
+    animation-name: calc_button_hover_reverse;
+    animation-duration: .05s;
+    animation-timing-function:ease-out;
+    animation-delay: .05s;
+    animation-fill-mode:both;
+}
+#calc button:hover {
+    /*Formatting*/
+    transform:translate(-4px,-4px);
+    /*Styling*/
+    box-shadow: 1px 1px rgb(95, 92, 174),
+    2px 2px rgb(95, 92, 174),
+    3px 3px rgb(95, 92, 174),
+    4px 4px rgb(95, 92, 174),
+    5px 5px rgb(95, 92, 174),
+    6px 6px rgb(95, 92, 174),
+    7px 7px rgb(95, 92, 174),
+    8px 8px rgb(95, 92, 174),
+    9px 9px rgb(95, 92, 174);
+    /*Animation*/
+    animation-name: calc_button_hover;
+    animation-duration: .05s;
+    animation-timing-function:ease-out;
+    animation-delay: .05s;
+    animation-fill-mode:both;
+}
+#calc button:active {
+    /*Styling*/
+    background-color: rgb(95, 92, 174);
+    color:rgb(255, 255, 255);
+    box-shadow: 1px 1px;
+}
+
+#calc_results button{
+    /*Styling*/
+    color: #052b0c;
+    background-color: #ffffff;
+    box-shadow: 1px 1px rgb(49, 78, 53),
+    2px 2px rgb(49, 78, 53),
+    3px 3px rgb(49, 78, 53),
+    4px 4px rgb(49, 78, 53);
+    border-style:double;
+    border-color: rgb(49, 78, 53);
+    border-radius: 4px;
+    font-weight: lighter;
+    /*Animation*/
+    animation-name:none;
+    
+}
+#calc_results button:hover{
+    /*Formatting*/
+    transform:scale(1);
+    /*Styling*/
+    box-shadow: 1px 1px rgb(49, 78, 53),
+    2px 2px rgb(49, 78, 53),
+    3px 3px rgb(49, 78, 53),
+    4px 4px rgb(49, 78, 53);
+    /*Animation*/
+    animation-name:none;
+}
+#calc_results button:active{
+    /*Styling*/
+    border-color: rgb(49, 78, 53);
+    background-color: rgb(49, 78, 53);
+    color:rgb(255, 255, 255);
+}
