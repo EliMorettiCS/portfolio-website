@@ -62,6 +62,7 @@ function printAnswer() { // Prints the calculated answer
         }
     }
     document.getElementById("results").innerHTML = tempEquation;
+    equation = [tempEquation]
 }
 function copyAnswer() { // Prints the calculated answer
     let tempEquation = equation.slice();
@@ -94,6 +95,7 @@ function copyAnswer() { // Prints the calculated answer
         }
     }
     navigator.clipboard.writeText(tempEquation);
+    equation = [tempEquation]
 }
 
 
